@@ -14,7 +14,7 @@ $(window).load(function() {
 
         $('body').vegas({
             slides: [
-                { src: 'img/slide-1.jpg' },
+                { src: 'https://static.pexels.com/photos/162971/potatoes-french-mourning-funny-162971.jpeg' },
                 { src: 'img/slide-2.jpg' },
                 { src: 'img/slide-3.jpg' },
             ],
