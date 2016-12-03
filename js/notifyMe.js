@@ -9,6 +9,7 @@
         var nameInput = e(this).find("input[name=name]");
         var emailInput = e(this).find("input[name=email]");
         var messageInput= e(this).find("input[name=message]");
+        debugger;
         var o = e(this).find(".note");
         e(this).on("submit", function(t) {
             t.preventDefault();
