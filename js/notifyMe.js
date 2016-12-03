@@ -23,7 +23,7 @@
                 o.show();
                 e.ajax({
                     type: "POST",
-                    url: "https://formspree.io/kkarich@yahoo.com",
+                    url: "https://formspree.io/woollyally@gmail.com",
                     data: {
                         name: nameVal,
                         email: emailVal,
