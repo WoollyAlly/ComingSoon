@@ -38,7 +38,7 @@
                         }
                     }
                 }).done(function(e) {
-                    console.log("test")
+                    console.log("test", e)
                     o.hide();
                     if (e.status == "success") {
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
