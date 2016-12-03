@@ -15,9 +15,9 @@
             var nameVal = nameInput.val();
             var emailVal = emailInput.val();
             var messageVal = messageInput.val();
+            debugger;
             var p = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             if (p.test(emailVal)) {
-        debugger;
                 $(".message").removeClass("error bad-email success-full");
                 $(".message").hide().html('').fadeIn();
                 $(".fa-spinner").addClass("fa-spin").removeClass("opacity-0");
