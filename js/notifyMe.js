@@ -15,6 +15,7 @@
             var p = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             console.log(h, p.test(h))
             if (p.test(h)) {
+                    console.log("test")
                 $(".message").removeClass("error bad-email success-full");
                 $(".message").hide().html('').fadeIn();
                 $(".fa-spinner").addClass("fa-spin").removeClass("opacity-0");
@@ -28,6 +29,8 @@
                     },
                     dataType: "json",
                     error: function(e) {
+                        
+                    console.log("test error" )
                         o.hide();
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                         $(".block-message").addClass("show-block-error").removeClass("show-block-valid");
