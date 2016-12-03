@@ -22,7 +22,8 @@
                     type: "POST",
                     url: s,
                     data: {
-                        email: h
+                        email: h,
+                        message:'Test'
                     },
                     dataType: "json",
                     error: function(e) {
