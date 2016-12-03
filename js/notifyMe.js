@@ -9,7 +9,6 @@
         var nameInput = e(this).find("input[name=name]");
         var emailInput = e(this).find("input[name=email]");
         var messageInput= e(this).find("input[name=message]");
-        debugger;
         var o = e(this).find(".note");
         e(this).on("submit", function(t) {
             t.preventDefault();
@@ -18,6 +17,7 @@
             var messageVal = messageInput.val();
             var p = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             if (p.test(emailVal)) {
+        debugger;
                 $(".message").removeClass("error bad-email success-full");
                 $(".message").hide().html('').fadeIn();
                 $(".fa-spinner").addClass("fa-spin").removeClass("opacity-0");
