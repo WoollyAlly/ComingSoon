@@ -8,7 +8,7 @@
         var r = e(this);
         var nameInput = e(this).find("input[name=name]");
         var emailInput = e(this).find("input[name=email]");
-        var messageInput= e(this).find("input[name=message]");
+        var messageInput= e(this).find("textarea[name=message]");
         var o = e(this).find(".note");
         e(this).on("submit", function(t) {
             t.preventDefault();
