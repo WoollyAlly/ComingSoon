@@ -14,9 +14,11 @@ $(window).load(function() {
 
         $('body').vegas({
             slides: [
-                { src: 'https://static.pexels.com/photos/162971/potatoes-french-mourning-funny-162971.jpeg' },
-                { src: 'https://static.pexels.com/photos/164703/pexels-photo-164703.jpeg' },
-                { src: 'img/slide-3.jpg' },
+                { src: 'img/woolly.jpg' },
+                { src: 'img/fusion.jpg' },
+                { src: 'img/gbc.jpg' },
+                { src: 'img/ir.jpg' },
+                { src: 'img/em.jpg' },
             ],
 
             // Delay beetween slides in milliseconds.
