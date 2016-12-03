@@ -94,6 +94,37 @@
 
 		                <form action="php/notify-me.php" id="notifyMe" method="POST">
 
+            		<div class="row">
+
+                        <!-- Full name -->
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form form-control" placeholder="Your Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name'" name="name" data-name="Name" required>
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form form-control" placeholder="Your Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email'" name="email-address" data-name="Email Address" required>
+                            </div>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="col-xs-12 col-sm-12 col-lg-12">
+                            <div class="form-group">
+                                <input type="text" id="subject" class="form form-control" placeholder="Write the subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write the subject'" name="subject" data-name="Subject">
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+                            <div class="form-group">
+                                <textarea id="text-area" class="form textarea form-control" placeholder="Your message here... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
+                            </div>
+                        </div>
+
+                    </div>
 		                    <div class="form-group">
 
 		                        <div class="controls">
