@@ -40,7 +40,7 @@
                 }).done(function(e) {
                     console.log("test", e)
                     o.hide();
-                    if (e.status == "success") {
+                    if (e.success) {
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                         $(".message").removeClass("bad-email").addClass("success-full");
                         $(".block-message").addClass("show-block-valid").removeClass("show-block-error");
