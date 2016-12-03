@@ -38,6 +38,7 @@
                         }
                     }
                 }).done(function(e) {
+                    console.log("test")
                     o.hide();
                     if (e.status == "success") {
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
