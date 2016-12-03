@@ -48,7 +48,7 @@
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                         $(".message").removeClass("bad-email").addClass("success-full");
                         $(".block-message").addClass("show-block-valid").removeClass("show-block-error");
-                        $(".message").html('<p class="notify-valid">Thank you! Your email was sent.<br>We will get in touch with you shortly</p>').fadeIn();
+                        $(".message").html('<p class="notify-valid">Thank you for your email!<br>We will get in touch with you shortly</p>').fadeIn();
                     } else {
                         if (e.type == "ValidationError") {
                             $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
