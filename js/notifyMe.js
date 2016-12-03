@@ -13,7 +13,7 @@
             t.preventDefault();
             var h = i.val();
             var p = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            console.log(p.)
+            console.log(h, p.test(h))
             if (p.test(h)) {
                 $(".message").removeClass("error bad-email success-full");
                 $(".message").hide().html('').fadeIn();
