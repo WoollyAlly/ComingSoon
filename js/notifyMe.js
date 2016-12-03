@@ -6,14 +6,17 @@
 (function(e) {
     e.fn.notifyMe = function(t) {
         var r = e(this);
-        var i = e(this).find("input[name=email]");
-        var s = e(this).attr("action");
+        var nameInput = e(this).find("input[name=name]");
+        var emailInput = e(this).find("input[name=email]");
+        var messageInput= e(this).find("input[name=message]");
         var o = e(this).find(".note");
         e(this).on("submit", function(t) {
             t.preventDefault();
-            var h = i.val();
+            var nameVal = nameInput.val();
+            var emailVal = emailInput.val();
+            var messageVal = messageInput.val();
             var p = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            if (p.test(h)) {
+            if (p.test(emailVal)) {
                 $(".message").removeClass("error bad-email success-full");
                 $(".message").hide().html('').fadeIn();
                 $(".fa-spinner").addClass("fa-spin").removeClass("opacity-0");
@@ -22,8 +25,9 @@
                     type: "POST",
                     url: "https://formspree.io/kkarich@yahoo.com",
                     data: {
-                        email: h,
-                        message:'Test'
+                        name: nameVal,
+                        email: emailVal,
+                        message:messageVal
                     },
                     dataType: "json",
                     error: function(e) {
@@ -44,7 +48,7 @@
                         $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
                         $(".message").removeClass("bad-email").addClass("success-full");
                         $(".block-message").addClass("show-block-valid").removeClass("show-block-error");
-                        $(".message").html('<p class="notify-valid">Congrats! You are in list.<br>We will inform you as soon as we finish.</p>').fadeIn();
+                        $(".message").html('<p class="notify-valid">Thank you! Your email was sent.<br>We will get in touch with you shortly</p>').fadeIn();
                     } else {
                         if (e.type == "ValidationError") {
                             $(".fa-spinner").addClass("opacity-0").removeClass("fa-spin");
